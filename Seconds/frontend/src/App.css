@@ -1,0 +1,58 @@
+.left {
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+  }
+  .left:hover{
+
+    clip-path: polygon(0 0, 80% 0%, 60% 100%, 0 100%);
+  }
+   .left:hover~.right{
+    clip-path: polygon(80% 0, 100% 0%, 100% 100%, 60% 100%);
+  }
+.right {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+   
+    clip-path: polygon(60% 0, 100% 0%, 100% 100%, 40% 100%);
+  }
+  .right:hover{
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 20% 100%);
+  }
+#user-screen
+{
+  background-color: black;
+  position: relative;
+}
+
+#image_home
+{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+}
+#image_home:hover
+{
+  opacity: 0.8;
+}
+#image_api
+{
+  width: 100%;
+  opacity: 0.5;
+  height: 100vh;
+}
+#image_api:hover
+{
+  opacity: 0.8;
+}
+#api
+{
+  background-color: black;
+}
